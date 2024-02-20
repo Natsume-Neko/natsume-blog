@@ -8,6 +8,10 @@ export const topbarLinkItems = [
   {
     name: 'Posts',
     url: '/posts'
+  },
+  {
+    name: 'About',
+    url: '/about'
   }
 ];
 

@@ -11,8 +11,8 @@ export default function Topbar({
 ) {
 
   return (
-    <div className="flex justify-between w-full h-10 border-b border-b-gray-500">
-      <h1>Natsume's Blog</h1>
+    <div className="flex justify-between w-full h-10  z-50 bg-black border-b border-b-gray-500 fixed">
+      <h1 className="text-3xl">夏目のBlog</h1>
       <div className="flex">
         {
           topbarLinkItems.map(({name, url}) => <TopbarLink name={name} url={url} currentOn={currentOn} />)
