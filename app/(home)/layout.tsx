@@ -12,9 +12,9 @@ export default function homeLayout({ children }: {
         <body>
           <div className="flex flex-col h-screen overflow-auto">
             <Topbar currentOn={pathname} />
-            <div className="flex-grow top-10 relative mb-16">
+            <div className="flex-grow mt-10 mb-16">
               <div className="flex justify-center">
-                <div className="bg-main-body shadow-pink-300 shadow-sm rounded-sm max-w-[1100px] mt-10">
+                <div className="bg-main-body shadow-pink-300 shadow-sm rounded-sm w-[1100px] mt-10">
                   <div className="p-5 text-lg">
                     {children}
                   </div>

@@ -19,6 +19,6 @@ export default function TopbarLink({
 
 
   return (
-    <a href={url} className={clsx("p-2 rounded-md hover:text-blue-500", checkIsAtCurrentPage() && "bg-pink-400")}>{name}</a>
+    <a href={url} className={clsx("p-2 rounded-md hover:text-gray-300", checkIsAtCurrentPage() && "bg-pink-400")}>{name}</a>
   )
 }
