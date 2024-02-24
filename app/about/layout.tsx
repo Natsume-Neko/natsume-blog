@@ -1,6 +1,8 @@
 import Topbar from "@/components/topbar/topbar";
+import "github-markdown-css/github-markdown-dark.css"
+import 'highlight.js/styles/github-dark.css'
 
-export default function homeLayout({ children }: {
+export default function aboutLayout({ children }: {
   children: React.ReactNode;
 }) {
   return (
@@ -8,12 +10,10 @@ export default function homeLayout({ children }: {
         <body>
           <div className="flex flex-col h-screen overflow-auto bg-[#0d1117] text-white">
             <Topbar />
-            <div className="flex-grow mt-10">
+            <div className="flex-grow mt-10 mb-16">
               <div className="flex justify-center">
-                <div className="w-[1100px] mt-10">
-                  <div className="p-5 text-lg">
-                    {children}
-                  </div>
+                <div className="markdown-body w-[1190px] p-[45px]">
+                  {children}
                 </div>
               </div>
             </div>

@@ -13,11 +13,11 @@ export default function CatalogueCard({
 }: CatalogueCardProps
 ) {
   return (
-    <div className="flex flex-col pb-[45px] mb-10 border-b border-b-gray-700">
-      <a href={'/posts/' + slug}>
-        <h1 className="text-2xl font-bold mb-5 hover:text-gray-300">{title}</h1>
-      </a>
-      <p className="text-sm italic">{description}</p>
+    <div className="flex flex-col pb-[45px]">
+      <h1 className="text-2xl font-bold hover:text-gray-300 pb-5 border-b border-b-gray-700">
+        <a href={'/posts/' + slug}>{title}</a>
+      </h1>
+      <p className="text-sm italic pt-5">{description}</p>
     </div>
   )
 }
