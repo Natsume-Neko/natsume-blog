@@ -1,9 +1,21 @@
+import "github-markdown-css/github-markdown-dark.css"
+import 'highlight.js/styles/github-dark.css'
+import FooterContent from 'FooterContent.mdx'
 
+interface FooterProps {
+  date: string;
+  tags: string;
+}
 
-export default function Footer() {
+export default function Footer({
+  date,
+  tags
+}: FooterProps) {
   return (
-    <footer className="bg-gray-800 text-white p-4 text-lg static">
-      <p>© 2024. Natsume Neko, Built with Next.js and Tailwind CSS</p>
-    </footer>
-  );
+    <div>
+      <div className="markdown-body w-[1190px] p-[45px]">
+        <FooterContent date={date} tags={tags} />
+      </div>
+    </div>
+  )
 }
